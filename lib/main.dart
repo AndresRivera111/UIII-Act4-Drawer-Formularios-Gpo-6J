@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/form.dart';
 import 'package:myapp/home_page.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       routes: {
         "/home": (context) => HomePage(),
+        "/form": (context) => MyForm(),
       },
     );
   }

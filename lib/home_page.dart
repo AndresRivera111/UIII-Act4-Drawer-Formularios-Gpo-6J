@@ -53,14 +53,31 @@ class HomePage extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: (){
-              },
+              onTap: () {},
               child: ListTile(
-                onTap: (){Navigator.popAndPushNamed(context, "/home");},
-                leading: Icon(Icons.home, color:const Color.fromARGB(146, 22, 70, 55)),
+                onTap: () {
+                  Navigator.popAndPushNamed(context, "/home");
+                },
+                leading: Icon(
+                  Icons.home,
+                  color: const Color.fromARGB(146, 22, 70, 55),
+                ),
                 title: Text("Inicio"),
               ),
-            )
+            ),
+            InkWell(
+              onTap: () {},
+              child: ListTile(
+                onTap: () {
+                  Navigator.popAndPushNamed(context, "/form");
+                },
+                leading: Icon(
+                  Icons.add,
+                  color: const Color.fromARGB(146, 22, 70, 55),
+                ),
+                title: Text("Agregar clientes"),
+              ),
+            ),
           ],
         ),
       ),
